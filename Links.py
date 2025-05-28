@@ -74,4 +74,5 @@ app.router.add_get('/link', handle_get_links)
 app.router.add_get('/all_links', handle_get_all_links)
 app.router.add_post('/add', handle_add_links)
 
-web.run_app(app, port=80)
+if __name__ == "__main__":
+    web.run_app(app, port=80)
